@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const token = require('../BobbyBBot/auth.json');
+const trigger = 'bobby';
 
 const quotes = [
     'You heard the Hand, the king\'s too fat for his armor! Go find the breastplate stretcher! NOW!',
@@ -19,7 +20,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if(message.content === 'ping'){
+    if(message.content.toLowerCase().includes(trigger)){
         message.channel.send(quotes[Math.floor(Math.random() * quotes.length) + 1]);
     }
 });
