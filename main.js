@@ -37,7 +37,8 @@ const quotes = [
     'In my dreams, I kill him everynight.',
     'We never had the chances to be young ',
     'It\'s a great crime to lie to a King. ',
-    'I should not have hit her. That was not kingly '
+    'I should not have hit her. That was not kingly ',
+    'Fat? Fat, is it? Is that how you speak to your king? Ah, damn you, Ned, why are you always right?'
 ];
 
 const client = new Discord.Client();
